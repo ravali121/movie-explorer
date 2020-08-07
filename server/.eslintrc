@@ -1,0 +1,21 @@
+{
+  "parser": "babel-eslint",
+  "env": {
+    "es6": true,
+    "node": true,
+    "mongo": true,
+    "browser": true
+  },
+  "settings": {
+    "import/resolver": {
+      "babel-module": {
+        "root": ["./src"],
+        "alias": {
+          "src": "./src",
+          "tests": "./__tests__"
+        },
+        "cwd": "babelrc"
+      }
+    }
+  }
+}
