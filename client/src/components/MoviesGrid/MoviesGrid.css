@@ -1,0 +1,19 @@
+.movie-grid {
+    margin: 0 auto;
+    max-width: 1500px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1.5rem;
+}
+
+@media (min-width: 600px) {
+    .movie-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width: 900px) {
+    .movie-grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}

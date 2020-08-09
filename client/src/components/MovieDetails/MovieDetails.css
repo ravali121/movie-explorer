@@ -1,0 +1,7 @@
+.movie-container {
+    display: flex;
+}
+
+.details {
+    padding-left: 40px;
+}

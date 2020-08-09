@@ -7,7 +7,8 @@ const envs = {
   name: process.env.APP_NAME || 'Movies Explorer',
   host: process.env.APP_HOST || '0.0.0.0',
   port: process.env.APP_PORT || 8000,
-  domain: `${process.env.APP_HOST || 'locahost'}:${process.env.APP_PORT || 8000}`
+  domain: `${process.env.APP_HOST || 'locahost'}:${process.env.APP_PORT || 8000}`,
+  moviesApiKey:process.env.MOVIES_API_KEY
 };
 
 export default envs;

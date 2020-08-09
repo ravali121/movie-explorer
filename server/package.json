@@ -11,12 +11,16 @@
   "license": "ISC",
   "dependencies": {
     "@koa/cors": "^3.1.0",
+    "axios": "^0.19.2",
     "babel-preset-env": "^1.7.0",
     "dotenv": "^8.2.0",
     "koa": "^2.13.0",
     "koa-bodyparser": "^4.3.0",
     "koa-joi-router": "^6.0.2",
-    "nodemon": "^2.0.4"
+    "koa-respond": "^2.1.0",
+    "node-fetch": "^2.6.0",
+    "nodemon": "^2.0.4",
+    "require-directory": "^2.1.1"
   },
   "devDependencies": {
     "@babel/cli": "^7.10.5",
