@@ -2,6 +2,7 @@ import React, {Component } from "react";
 import {getImageFromSource} from "../../utils/getImageFromSource";
 import {Link} from "react-router-dom";
 import axios from "axios";
+import './MovieDetails.css';
 
 
 class MovieDetails extends Component {
@@ -52,8 +53,9 @@ class MovieDetails extends Component {
           <img src={getImageFromSource(poster_path)} alt={original_title} />
         </div>
         }
-        <div className="details">
+        <div className="content">
           <h1>{original_title}</h1>
+          <p><i>Release Date: {release_date}</i></p>
           <p>{overview}</p>
           <p>Score: {vote_average}/10</p>
           <h3>Cast</h3>
@@ -64,7 +66,6 @@ class MovieDetails extends Component {
               </li>
             ))}
           </ul>
-          <p><i>Release Date: {release_date}</i></p>
         </div>
       </div>
     )

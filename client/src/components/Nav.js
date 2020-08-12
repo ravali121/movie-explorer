@@ -1,7 +1,8 @@
 import React from "react";
 import './Nav.css';
+import Pagination from "./Pagination/Pagination";
 
-function Nav() {
+const  Nav = (props) => {
   return (
     <nav>
       <h3 className='web-title'>Movies Explorer</h3>
@@ -11,6 +12,6 @@ function Nav() {
       </form>
     </nav>
   )
-}
+};
 
 export default Nav;

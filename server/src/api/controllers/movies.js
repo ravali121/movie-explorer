@@ -12,7 +12,6 @@ class MoviesController {
 
     const {query} = ctx;
     const pageNum = Number(query.page);
-    console.log(pageNum);
 
     try {
       const {data:res} = await axios.get(`https://api.themoviedb.org/3/movie/popular?api_key=${envs.moviesApiKey}&language=en-US&page=${pageNum}`);
@@ -26,10 +25,8 @@ class MoviesController {
   async getMovieDetails(ctx) {
     const {params} = ctx;
     const {id: movieId} = params;
-    console.log(movieId);
     try {
       const {data:res} = await axios.get(`https://api.themoviedb.org/3/movie/${movieId}?api_key=${envs.moviesApiKey}&language=en-US`);
-      console.log(res);
       ctx.status=200;
       ctx.body=res;
     }catch (e) {
@@ -44,15 +41,12 @@ class MoviesController {
 
     try {
       const {data:res} = await axios.get(`https://api.themoviedb.org/3/movie/${movieId}/credits?api_key=${envs.moviesApiKey}&language=en-US`);
-      console.log(res);
       ctx.status=200;
       ctx.body=res;
     }catch (e) {
       ctx.throw(e);
     }
   }
-
-
 }
 
 export default MoviesController;

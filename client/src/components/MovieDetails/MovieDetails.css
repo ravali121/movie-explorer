@@ -1,7 +1,12 @@
 .movie-container {
     display: flex;
+    background-color: azure;
 }
 
-.details {
+.content {
     padding-left: 40px;
+    padding-right: 40px;
+}
+.cast {
+  list-style-type: none;
 }
